@@ -1,18 +1,8 @@
-def number_to_day(num=0):
-    """任意の整数が与えられたら今日、昨日、明日、それ以外を判定して返す
+def f(n=0):
+    week = ["水", "木", "金", "土", "日", "月", "火"]
+    k = "後" if n > 0 else ("前" if n < 0 else "")
+    return "今日は水曜日です" if n == 0 else f"{abs(n)}日{k}は{week[n%7]}曜日です"
 
-    戻り値
-        昨日(numが-1の場合)
-        今日(numが0の場合)
-        明日(numが1の場合)
-        今日より1日を超えて離れた日(numが上記以外の場合)
-    """
-    if num == 0:
-        day = "今日"
-    elif num == 1:
-        day = "明日"
-    elif num == -1:
-        day = "昨日"
-    else:
-        day = "今日より1日を超えて離れた日"
-    return day
+
+n = int(input())
+print(f(n))

@@ -1,8 +1,6 @@
-def func_square(*args):
-    results = []
-    for n in args:
-        results.append(n * n)
-    return results
+def f(*nums):
+    return [i**2 for i in nums]
 
-numbers = [1, 2, 3, 4]
-func_square(*numbers)
+
+print(f(*[1, 2, 3, 4]))
+print(f(*list(range(100))))

@@ -1,29 +1,26 @@
-vote_num = 0
+# グローバル関数を使わない例
+n = 0
 
-def vote(vote_n):
-    print("投票します")
-    vote_n += 1
-    return vote_n
 
-def reset_box(vote_n):
-    print("箱を空にします")
-    vote_n = 0
-    return vote_n
+def vote(x):
+    print("1票投票します")
+    return x + 1
 
-def check_box(vote_n):
-    print("票の数は{}です".format(vote_n))
-    return
 
-vote_box = []
-label = "票"
-def vote():
-    print("投票します")
-    vote_box.clear(label)
+def reset():
+    print("箱を空にしました")
+    return 0
 
-def reset_box():
-    print("箱を空にします")
-    vote_box.clear()
 
-def check_box():
-    print("票の数は{}です".format(len(vote_box)), end=" ")
-    print("vote_box:", vote_box)
+def check(x):
+    print("ただいまの得票数: {}".format(x))
+
+
+while True:
+    a = input("vote or reset or check: ")
+    if a == "vote":
+        n = vote(n)
+    elif a == "reset":
+        n = reset()
+    else:
+        check(n)

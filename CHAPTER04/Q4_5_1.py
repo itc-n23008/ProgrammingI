@@ -1,4 +1,3 @@
-functions = [sum, min, max]
-number_list = range(1, 11)
-for func in functions:
-    print("Function: {}, Result: {}".format(func.__name__, func(number_list)))
+f = [sum, min, max]
+a = range(1, 11)
+print(*[f"Func: {i.__name__}, result: {i(a)}" for i in f], sep="\n")

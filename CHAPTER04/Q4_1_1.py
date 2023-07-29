@@ -1,6 +1,9 @@
-def fib(n):
-    '''nより小さなフィボッチ数列を列挙する'''
+def f(n):
     a, b = 0, 1
     while a < n:
-        print(a, end=' ')
-        a, b = b, a+b
+        print(a, end=" ")
+        a, b = b, a + b
+
+
+n = int(input())
+f(n)
