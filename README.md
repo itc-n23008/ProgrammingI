@@ -41,7 +41,7 @@
 * 4.5 関数はオブジェクト [(問題１)](CHAPTER04/Q4_5_1.py) [(問題２)](CHAPTER04/Q4_5_2.py)
 * 4.6 ラムダ式 [(問題１)](CHAPTER04/Q4_6_1.py) [(問題２)](CHAPTER04/Q4_6_2.py)
 * 4.7 関数の中の関数 [(問題１)](CHAPTER04/Q4_7_1.py) [(問題２)](CHAPTER04/Q4_7_2.py)
-* 4.8 デコレータ [(問題１)](CHAPTER04/q4_8_1.py)[(230725課題1)](CHAPTER04/kuku.py)
+* 4.8 デコレータ [(問題１)](CHAPTER04/Q4_8_1.py)[(230725課題1)](CHAPTER04/kuku.py)
 * 4.9 コーディングスタイル [(問題１)](CHAPTER04/Q4_9_1.py) [(問題２)](CHAPTER04/Q4_9_2.py)
 
 ### CHAPTER5 データ構造
