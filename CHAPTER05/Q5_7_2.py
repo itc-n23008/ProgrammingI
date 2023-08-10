@@ -15,3 +15,8 @@ for record in data:
     key = record[0]
     info = record[1:]
     member_information[key] = info
+
+# 結果を表示する
+print("number", "informatin", sep="\t")
+for key, info in member_information.items():
+    print(key, info)
